@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BasicPrograms
 {
-    internal class SwapProgram
+    public class SwapProgram
     {
         int a, b, temp;
         public void swapNumbers()

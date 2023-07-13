@@ -5,7 +5,7 @@ public class Program
     static void Main(string[] args)
     {
         Console.WriteLine("creating some basic programs");
-        Console.WriteLine("select program which you want to do \n 1.Swap NUmbers\n 2.EvenOrOdd\n 3.Find largest Number");
+        Console.WriteLine("select program which you want to do \n 1.Swap NUmbers\n 2.EvenOrOdd\n 3.Find largest Number\n 4.Quotientand Remainder");
         int option = Convert.ToInt32(Console.ReadLine());
         switch (option)
         {
@@ -29,6 +29,12 @@ public class Program
                     int c = Convert.ToInt32(Console.ReadLine());
                     GreatestNumber greatestNumber = new GreatestNumber();
                     greatestNumber.Numbers(a, b, c);
+                    break;
+                }
+            case 4:
+                {
+                    QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
+                    quotientAndRemainder.findQuotientAndRemainder();
                     break;
                 }
             default:

@@ -5,7 +5,7 @@ public class Program
     static void Main(string[] args)
     {
         Console.WriteLine("creating some basic programs");
-        Console.WriteLine("select program which you want to do \n 1.Swap NUmbers\n 2.EvenOrOdd\n 3.Find largest Number\n 4.Quotientand Remainder");
+        Console.WriteLine("select program which you want to do \n 1.Swap NUmbers\n 2.EvenOrOdd\n 3.Find largest Number\n 4.Quotientand Remainder\n 5.VowelOrCosonant");
         int option = Convert.ToInt32(Console.ReadLine());
         switch (option)
         {
@@ -37,6 +37,10 @@ public class Program
                     quotientAndRemainder.findQuotientAndRemainder();
                     break;
                 }
+            case 5:
+                VowelOrCosonant vowelOrConsonant = new VowelOrCosonant();
+                vowelOrConsonant.CheckVowelOrConsonant();
+                break;
             default:
             Console.WriteLine("Invalid option selected.");
                 break;

@@ -6,7 +6,7 @@ public class Program
     {
         Console.WriteLine("creating some basic programs");
         Console.WriteLine("select program which you want to do \n 1.Swap NUmbers\n 2.EvenOrOdd\n 3.Find largest " +
-            "Number\n 4.Quotientand Remainder\n 5.VowelOrCosonant\n 6.leap Year");
+            "Number\n 4.Quotientand Remainder\n 5.VowelOrCosonant\n 6.leap Year\n 7.Flipcoin");
         int option = Convert.ToInt32(Console.ReadLine());
         switch (option)
         {
@@ -46,6 +46,10 @@ public class Program
                
                 LeapYear leapYear = new LeapYear();
                 leapYear.InputYear();
+                break;
+            case 7:
+                FlipCoin coin = new FlipCoin();
+                coin.percentageOfHeadVsTail();
                 break;
             default:
             Console.WriteLine("Invalid option selected.");

@@ -6,7 +6,7 @@ public class Program
     {
         Console.WriteLine("creating some basic programs");
         Console.WriteLine("select program which you want to do \n 1.Swap NUmbers\n 2.EvenOrOdd\n 3.Find largest " +
-            "Number\n 4.Quotientand Remainder\n 5.VowelOrCosonant\n 6.leap Year\n 7.Flipcoin\n 8.Power of 2");
+            "Number\n 4.Quotientand Remainder\n 5.VowelOrCosonant\n 6.leap Year\n 7.Flipcoin\n 8.Power of 2\n 9.Harmonic Numbers");
         int option = Convert.ToInt32(Console.ReadLine());
         switch (option)
         {
@@ -54,6 +54,11 @@ public class Program
             case 8:
                 PowerOfTwo powerOfTwo = new PowerOfTwo();
                 powerOfTwo.CalculatePower();
+                break;
+            case 9:
+              
+                HarmonicNumber harmonicNumber = new HarmonicNumber();
+                harmonicNumber.CalculateHarmonicValue();
                 break;
             default:
             Console.WriteLine("Invalid option selected.");
